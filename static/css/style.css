@@ -1,0 +1,108 @@
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot'); /* IE9*/
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('../fonts/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.post-rate,.rating-stars,.rating-star i {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.post-rate{
+  position:relative;
+  display:inline-block;
+  z-index:8;
+}
+.post-rate:before,.rating-stars:before{
+  color:#f99b01;
+}
+.post-rate:before{
+  content:"\e601\e601\e601\e601\e601";
+}
+.rating-stars:before{
+  text-indent:0;
+  content:"\e600\e600\e600\e600\e600";
+}
+.rate-holder{
+  *display:none;
+  height:32px;
+  line-height: 1.9;
+}
+.rating-stars{
+  height:23px;
+  overflow:hidden;
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:10
+}
+.rating-combo{
+  display:inline-block;
+  position:relative
+}
+
+.rating-combo.is-active ul{
+  display: block;
+}
+.rating-toggle{background:#eee;
+  color:#555;
+  padding:2px 4px;
+  position:relative;
+  z-index:2;
+  font-size:12px;
+  text-decoration: none;
+  border-radius:3px;
+  cursor: pointer;
+}
+.combo-open .rating-toggle{
+  background:#eee;
+  border-bottom:0;
+  color:#333;
+  text-decoration:none;
+  border-radius:3px 3px 0 0;
+  outline:none
+}
+.piao{
+  display:inline-block;
+  margin:0 5px;
+  font-size:12px;}
+.rating-combo ul{
+  background:#eee;
+  padding:2px;
+  position:absolute;
+  z-index:1;
+  left:0;
+  top:23px;
+  display:none;
+  border-radius:0 3px 3px 3px;
+  list-style:none;
+}
+
+.rating-star{
+  display:inline-block;
+  overflow:hidden;
+  position:relative;
+}
+.rating-star li{
+  cursor: pointer;
+  list-style:none;
+  line-height:1.2;
+}
+.rating-star li:hover{
+  background:#EEEECC;
+}
+.star-0-0,.star-1-0,.star-2-0,.star-3-0,.star-4-0,.star-5-0{}
+.star-0-0:before,.star-1-0:before,.star-2-0:before,.star-3-0:before,.star-4-0:before,.star-5-0:before{color:#f99b01}
+.star-0-0:before{content:""}
+.star-1-0:before{content:"\e600\e601\e601\e601\e601"}
+.star-2-0:before{content:"\e600\e600\e601\e601\e601"}
+.star-3-0:before{content:"\e600\e600\e600\e601\e601"}
+.star-4-0:before{content:"\e600\e600\e600\e600\e601"}
+.star-5-0:before{content:"\e600\e600\e600\e600\e600"}
